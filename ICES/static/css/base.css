@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Top section css start from here  */
+.top {
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 2rem;
+}
+.top .school_img a{
+    display: block;
+}
+.top .school_img a img {
+    width: 8rem;
+}
+.top .school_name {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.top .school_name h1, .short_form{
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    font-weight: 500;
+    color: rgb(62, 64, 149);
+    text-shadow: 2px 1px 0px blue;
+}
+.top .school_name span {
+    font-weight: 600;
+    color: black;
+}
+.top .school_name .short_form {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .top {
+        display: flex;
+        
+    }
+    .top .school_name .short_form {
+        display: none;
+    }
+    .top .school_name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top .school_name h1 {
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 560px){
+    .top {
+        display: flex;
+        justify-content: space-around
+    }
+    .top .school_name h1, span {
+        display: none;
+    }
+    .top .school_name .short_form {
+        display: block;
+        letter-spacing: 8px;
+    }
+}
+/* Top section css end here  */
+
+
+/* navbar CSS start from here  */
+
+li {
+    list-style-type: none;
+
+}
+
+li a {
+    color: rgb(62, 64, 149);
+    font-weight: 600;
+}
+li a:hover{
+    text-decoration: underline;
+}
+a {
+    display: block;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+}
+
+.navbar {
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: white;
+    height: auto;
+    z-index: 5 !important;
+}
+.navbar .nav_content {
+    width: 100%;
+    display: block;
+}
+
+.navbar .nav_content .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 10 !important;
+}
+
+.dropdown_menu li {
+    width: 15rem;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+    height: auto;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.navbar .nav_icon .nav_hamburger {
+    display: none;
+}
+
+.navbar .nav_icon .nav_hamburger .fa-bars {
+    color: grey;
+}
+
+/* Navbar Media Query start from here  */
+
+@media screen and (max-width: 1200px) {
+
+    .navbar .nav_content .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.3rem 0rem;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+
+    .navbar .nav_content .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.8rem 0rem;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .navbar {
+        padding: 0rem 1rem;
+    }
+    .navbar .nav_content .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem 1rem
+    }
+
+}
+
+/* Navbar CSS end here  */
+
+
+/* Register now css start from here  */
+.header_btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0rem;
+}
+.header_btn .register_now a {
+    background-color: rgb(62, 64, 149);
+    width: 11rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    color: white;
+}
+.header_btn .register_now a span {
+    display: block;
+}
+
+/* register now css end here  */
+
+/* Footer css start from here  */
+.footer_heading h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(62, 64, 149);
+    text-decoration: underline;
+}
+.footer{
+    margin: 1rem 0rem 3rem 0rem;
+}
+.footer .links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .links .link_list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer .links .link_list ul .list {
+    display: flex;
+    gap: 4px;
+}
+.footer .links .link_list ul .list a {
+    color: black;
+    font-weight: 500;
+}
+.footer .links .link_list ul .list a:hover{
+    text-decoration: underline;
+}
+
+/* Footer Responsive start from here  */
+@media screen and (max-width: 600px) {
+    .footer .links .link_list ul .list span {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer .links {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+/* Responsive End here  */
+/* Footer css end here  */
+
+/* Copyright css start from here  */
+.copyright {
+    margin: 3rem 0rem 3rem 0rem;
+}
+.copyright .copyright_line p {
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+.copyright .copyright_line span {
+    color: rgb(62, 64, 149);
+    font-weight: 600;
+
+}
+@media screen and (max-width: 500px){
+    .copyright .copyright_line p {
+        margin-bottom: 0.5rem;
+    }
+}
+/* Copyright css end here  */

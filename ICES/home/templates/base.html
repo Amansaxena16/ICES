@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css File Links -->
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <!-- Top section start from here  -->
+    <section class="top">
+        <div class="school_img">
+            <a href="#">
+                <img src="/static/images/logo.png" alt="ICES">
+            </a>
+        </div>
+        <div class="school_name">
+            <h1>INTERNATIONAL CENTRE ENGLISH SCHOOL</h1>
+            <span>(Affiliated to C.B.S.E. New Delhi) Affilation No. 2130317 School Code: 70742)</span>
+            <h1 class="short_form">ICES</h1>
+        </div>
+    </section>
+    <!-- Top section end here  -->
+
+    <!-- Navbar Code start from here  -->
+    <section class="navbar">
+        {% load static %}
+        <div class="nav_content">
+            <ul class="menu">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About Us</a></li>
+                <li> <a href="#">Admission Criteria</a></li>
+                <li class="dropdown">
+                    <a href="#">Infrastructure </a>
+                    <ul class="dropdown_menu">
+                        <li> <a href="#">Class Room</a></li>
+                        <li> <a href="#">Library</a></li>
+                        <li> <a href="#">Music Hall</a></li>
+                        <li> <a href="#">Chemristry Lab</a></li>
+                        <li> <a href="#">Physics Lab</a></li>
+                        <li> <a href="#">Biology Lab</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Result</a></li>
+                <li class="dropdown">
+                    <a href="#">Fee Structure</a>
+                    <ul class="dropdown_menu">
+                        <li> <a href="#">Class-Pre</a></li>
+                        <li> <a href="#">Class-K.G.</a></li>
+                        <li> <a href="#">Nursery</a></li>
+                        <li> <a href="#">Class I-V</a></li>
+                        <li> <a href="#">Class VI-VIII</a></li>
+                        <li> <a href="#">Class IX</a></li>
+                        <li> <a href="#">Class X</a></li>
+                        <li> <a href="#">Class XI Commerce</a></li>
+                        <li> <a href="#">Class XII Science</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Gallery</a>
+                    <ul class="dropdown_menu">
+                        <li> <a href="#">science Project</a></li>
+                        <li> <a href="#">Sports Day</a></li>
+                        <li> <a href="#">Annual Concert</a></li>
+                        <li> <a href="#">Fate 2016</a></li>
+                        <li> <a href="#">Natioanal Constitutional Day</a></li>
+                        <li> <a href="#">World Save Sparrow Day</a></li>
+                        <li> <a href="#">Basant Panchami 2017</a></li>
+                        <li> <a href="#">Independence Day 2017</a></li>
+                        <li> <a href="#">Sports Day 2017</a></li>
+                        <li> <a href="#">Health Checkup</a></li>
+                        <li> <a href="#">Fancy Dress Competition</a></li>
+                        <li> <a href="#">Fate 2018</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Mandatory public Disclosure</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Navbar code end here  -->
+
+    <!-- Register Now btn start from here  -->
+
+    <div class="header_btn">
+        <div class="register_now">
+            <a href="#">
+                <span>Register Now</span>
+            </a>
+        </div>
+        <div class="register_now">
+            <a href="#">
+                <span>Contact Us</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Register Now btn end here  -->
+    
+    
+    {% block content %}
+
+
+    {% endblock %}
+
+    <!-- Footer section start from here  -->
+<div class="footer_heading">
+    <h1>Quick Links</h1>
+</div>
+<section class="footer">
+    <div class="links">
+        <div class="link_list">
+            <ul>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/academic_cal.pdf" target="_blank">Curriculum Academic
+                        Calendar<a>
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/Curriculum_Syllabus Class 1-12_2021.pdf">Detail of Curriculum
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/management_committee.pdf" target="_blank">Committee Information
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/tc.pdf" target="_blank"> Transfer Cerfificate
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="#" target="_blank">Norms Followed for
+                        Fixing Fee
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/self_affidavit.pdf" target="_blank">Affidavit
+                    </a>
+                </div>  
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/self_affidavit.pdf" target="_blank">Affilation Status
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/tea_list.pdf" target="_blank">Teachers List
+                    </a>
+                </div>    
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/book_declaration.pdf" target="_blank">Book Declaration
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="link_list">
+            <ul>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/student_class_wise.pdf" target="_blank">No. of Students
+                    </a>
+                </div>   
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/books_list.pdf" target="_blank">List of Books
+                    </a>
+                </div>   
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="#" target="_blank">Annual Report
+                    </a>
+                </div>        
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/ICES_Circular_2021.pdf" target="_blank">School Circulars
+                    </a>
+                </div>        
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="#" target="_blank">Fees Charge
+                    </a>
+                </div>         
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/affiliation_status.pdf" target="_blank">Period of Affilation
+                    </a>
+                </div>            
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/academic_cal.pdf" target="_blank">Academic Calendar
+                    </a>
+                </div>              
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/Academic_Achievments.pdf" target="_blank">Academic Achievements
+                    </a>
+                </div>
+                <div class="list">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    <a href="/static/files/dashboard/Online_Teachers_Training_Detail.pdf" target="_blank">Teachers Training
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Footer section end here  -->
+
+<!-- Copyright section start from here  -->
+<section class="copyright">
+    <div class="copyright_line">
+        <p>CopyRight © By <span>INTERNATIONAL CENTER ENGLISH SCHOOL, KANPUR</span> from 2012-2023</p>
+        <p>Designed By <span>SHOBHA INFOMEDIA</span></p>
+    </div>
+</section>
+<!-- Copyright Section end here  -->
+
+    <!-- My JS links -->
+    <script src="/static/js/base.js"></script>
+</body>
+
+</html>

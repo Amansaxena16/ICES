@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* School provide css start from here  */
+.provide_heading {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.provide_heading h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(62, 64, 149);
+    text-decoration: underline;
+}
+.provide {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 0rem;
+}
+.provide .provide_carts {
+    width: 24rem;
+    height: 12rem;
+    background-color: rgb(248, 249, 250);
+    padding: 0.5rem 1.0rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.6rem 0rem rgb(222, 226, 230);
+}
+.provide .provide_carts .cart {
+    display: flex;
+    gap: 0.7rem;
+}
+.provide .provide_carts .cart .cart_icon a {
+    display: block;
+    width: 3rem;
+}
+.provide .provide_carts .cart .cart_icon a img{
+    width: 100%;
+}
+.provide .provide_carts .cart .cart_info .cart_heading a span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(62, 64, 149);
+}
+.provide .provide_carts .cart .cart_info .cart_para p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+/* Responsive start from here  */
+@media screen and (max-width: 1200px){
+    .provide{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 1.5rem 0rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .provide{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1.5rem 0rem;
+    }
+}
+/* Responsive end here  */
+/* School provide css end here  */
+
+/* School Mission css start from here  */
+.school_mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0rem;
+    margin: 3rem 0rem;
+}
+.school_mission .mission_heading h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(62, 64, 149);
+    text-decoration: underline;
+}
+.school_mission .mission_info {
+    text-align: center;
+}
+.school_mission .mission_info p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.school_mission .missions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 5rem;
+}
+.school_mission .missions .miss {
+    display: flex;
+    gap: 4px;
+}
+.school_mission .missions .miss .miss_info span {
+    font-weight: 500;
+    color: grey;
+}
+
+/* Responsive start from here  */
+@media screen and (max-width: 530px){
+    .school_mission .missions {
+        gap: 0.5rem 1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .school_mission .missions {
+        grid-template-columns: 1fr;
+        gap: 1rem 0rem;
+    }
+}
+/* Responsive end here  */
+/* School Mission Css end here  */
+
+/* DashBoard css start from here  */
+.dashBoard {
+    margin: 2rem 0rem 2rem 0rem;
+}
+.dashBoard .dash_heading {
+    margin: 2rem 0rem 2rem 0rem;
+}
+.dashBoard .dash_heading h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(62, 64, 149);
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+.dashBoard .dashboard_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 2rem 0rem;
+}
+.dashBoard .dashboard_items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0rem 0rem 0.1rem 0.1rem grey; */
+}
+.dashBoard .dashboard_items .item .item_img a {
+    display: block;
+    width: 5.5rem;
+}
+.dashBoard .dashboard_items .item .item_img a img {
+    width: 100%;
+}
+.dashBoard .dashboard_items .item .item_heading a span {
+    color: black;
+    font-weight: 500;
+}
+.dashBoard .dashboard_items .item .item_heading a span:hover{
+    text-decoration: underline;
+}
+/* Responsive start from here  */
+@media screen and (max-width: 600px){
+    .dashBoard .dashboard_items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .dashBoard .dashboard_items .item .item_heading a span {
+        display: block;
+    }
+}
+/* Responsive end here  */
+/* DashBoard css end here  */
+
+
+/* youtube css start from here  */
+.youtube_heading h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(62, 64, 149);
+    text-decoration: underline;
+    font-size: 1.7rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.youtube {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.youtube .yotube_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.youtube .yotube_cart iframe {
+    width: 560px;
+    height: 315px;
+}
+.youtube .yotube_cart .youtube_info span {
+    font-weight: 600;
+}
+
+/* Responsive start from here  */
+@media screen and (max-width: 1100px){
+    .youtube .yotube_cart iframe {
+        width: 400px;
+        height: 215px;
+    }
+    .youtube .yotube_cart .youtube_info span {
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .youtube {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 500px){
+    .youtube .yotube_cart iframe {
+        width: 200px;
+        height: 115px;
+    }
+}
+/* Responsive end here  */
+/* youtube css end here  */
